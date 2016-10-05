@@ -21,6 +21,9 @@ public class GoatFoxCabbage
 	}
 	public static void description()
 	{
+	/*
+	*Description of game
+	*/
 		System.out.println("In this game the goal is to get all the items across the river");
 		System.out.println("The fox, cabbbage, and goat. However, the fox cannot be left ");
 		System.out.println("with the goat, and the goat cannot be left with the cabbbage");
@@ -43,7 +46,13 @@ public class GoatFoxCabbage
 	
 	
 	public static void gameStatus()
+	
+	
 	{
+	
+	/*
+	*Prints the status of the game visually
+	*/
 		String bank0 = "	";
 		String bank1 = "	";
 		if (!cabb)
@@ -78,6 +87,12 @@ public class GoatFoxCabbage
 	
 	public static boolean gameplay()
 	{
+	/*
+	*checks if you lost the game
+	*Checks if you won game
+	*Asks the user for the input of what he would like to move
+	*@return boolean breaks or continues the while loop if you lose or continue playing
+	*/
 		Scanner keyboard = new Scanner(System.in);
 		
 		if(cabb == goat && cabb != human && goat !=fox)
@@ -110,7 +125,11 @@ public class GoatFoxCabbage
 	
 	public static void change(String n)
 	{
-		
+	/*
+	*Switches the boolean value of the variables
+	*checks so you cant move items without human
+	*@param n takes in a user input to see what items he would like to move
+	*/
 		if (n.equals("H"))
 			human = !human;
 			
